@@ -1,0 +1,13 @@
+.my-icon {
+   color: #ee0000;
+ }
+
+
+.register-button {
+  margin-left: 10px;
+}
+
+
+.mat-form-field:focus > div.mat-icon {
+  display: none;
+}
