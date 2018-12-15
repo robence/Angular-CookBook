@@ -7,7 +7,7 @@ import {Observable} from 'rxjs';
   providedIn: 'root'
 })
 export class AuthService {
-  private requestUrl = `https://alacrity.herokuapp.com/`;
+  private requestUrl = `localhost:8080/`;
   private currentUser: IUser = null;
 
   constructor(private http: HttpClient) {
@@ -21,10 +21,6 @@ export class AuthService {
     return this.currentUser !== null;
   }
 
-  public getToken(): string {
-    return this.currentUser ? this.currentUser.token : null;
-  }
-
   public login(data: ILogin): Observable<IUser> {
     return this.http.post<IUser>(this.requestUrl + `api/users/login`, data);
   }
@@ -33,9 +29,9 @@ export class AuthService {
     return this.http.post<IUser>(this.requestUrl + `api/users/new`, data);
   }
 
-  // public logout(): Observable<IUser> {
-  //   return this.http.post<IUser>(this.requestUrl + `api/users/logout`, this.currentUser);
-  // }
+  public logout(): Observable<IUser> {
+    return this.http.post<IUser>(this.requestUrl + `api/users/logout`, this.currentUser);
+  }
 
   public getCurrentUser(): Observable<IUser> {
     return this.http.get<IUser>(this.requestUrl + `api/users/current`);
