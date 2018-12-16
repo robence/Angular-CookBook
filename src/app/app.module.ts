@@ -21,10 +21,10 @@ import {ReviewsAddComponent} from './screens/reviews/reviews-add/reviews-add.com
 import {ReviewsEditComponent} from './screens/reviews/reviews-edit/reviews-edit.component';
 import {ReviewsDetailsComponent} from './screens/reviews/reviews-details/reviews-details.component';
 import {MaterialModule} from './material.module';
-// import {RecipeComponent} from './screens/recipe/recipe.component';
-// import {ReceiptAddComponent} from './screens/recipe/receipt-add/receipt-add.component';
-// import {RecipeEditComponent} from './screens/recipe/receipt-edit/recipe-edit.component';
-// import {ReceiptDetailsComponent} from './screens/recipe/receipt-details/receipt-details.component';
+import {RecipeComponent} from './screens/recipe/recipe.component';
+import {ReceiptAddComponent} from './screens/recipe/recipe-add/receipt-add.component';
+import {RecipeEditComponent} from './screens/recipe/recipe-edit/recipe-edit.component';
+import {ReceiptDetailsComponent} from './screens/recipe/recipe-details/receipt-details.component';
 
 import {HttpClientModule} from '@angular/common/http';
 
@@ -46,10 +46,10 @@ import {HttpClientModule} from '@angular/common/http';
     ReviewsAddComponent,
     ReviewsDetailsComponent,
     ReviewsEditComponent,
-    // RecipeComponent,
-    // ReceiptAddComponent,
-    // RecipeEditComponent,
-    // ReceiptDetailsComponent
+    RecipeComponent,
+    ReceiptAddComponent,
+    RecipeEditComponent,
+    ReceiptDetailsComponent
   ],
   imports: [
     BrowserModule,

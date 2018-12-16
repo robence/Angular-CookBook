@@ -1,26 +1,26 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
+import {IRecipe} from '../../../dtos';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-import {IIngredient} from '../../../dtos';
+import recipes from '../recipe.data';
 import {ActivatedRoute} from '@angular/router';
-import ingredientData from '../ingredients.data';
 
 @Component({
-  selector: 'app-ingredients-edit',
-  templateUrl: './ingredients-edit.component.html',
-  styleUrls: ['./ingredients-edit.component.css']
+  selector: 'app-recipe-edit',
+  templateUrl: './recipe-edit.component.html',
+  styleUrls: ['./recipe-edit.component.css']
 })
-export class IngredientsEditComponent implements OnInit, OnDestroy {
+export class RecipeEditComponent implements OnInit, OnDestroy {
   public form: FormGroup;
   private id: number;
   private sub: any;
-  ingredient: IIngredient;
+  recipe: IRecipe;
 
-  constructor(private route: ActivatedRoute, private formBuilder: FormBuilder) { }
+  constructor( private route: ActivatedRoute, private formBuilder: FormBuilder) {}
 
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
       this.id = +params['id'];
-      this.ingredient = ingredientData.find(x => x.id === this.id);
+      this.recipe = recipes.find(x => x.id === this.id);
 
       this.createForm();
     });
@@ -28,18 +28,18 @@ export class IngredientsEditComponent implements OnInit, OnDestroy {
 
   public createForm(): void {
     this.form = this.formBuilder.group({
-      name: [this.ingredient.name, Validators.required]
+      name: [this.recipe.name, Validators.required]
       }
     );
   }
 
   public onSubmit(): void {
     if (this.form.valid) {
-      this.ingredient = {
-        id: this.ingredient.id,
+      this.recipe = {
+        id: this.recipe.id,
         name: this.form.get('name').value
       };
-      console.log(this.ingredient);
+      console.log(this.recipe);
     } else {
       alert('invalid form');
     }

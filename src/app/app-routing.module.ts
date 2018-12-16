@@ -13,10 +13,10 @@ import {ReviewsEditComponent} from './screens/reviews/reviews-edit/reviews-edit.
 import {IngredientsComponent} from './screens/ingredients/ingredients.component';
 import {IngredientsEditComponent} from './screens/ingredients/ingredients-edit/ingredients-edit.component';
 import {IngredientsAddComponent} from './screens/ingredients/ingredients-add/ingredients-add.component';
-// import {RecipeComponent} from './screens/recipe/recipe.component';
-// import {ReceiptAddComponent} from './screens/recipe/receipt-add/receipt-add.component';
-// import {RecipeEditComponent} from './screens/recipe/receipt-edit/recipe-edit.component';
-// import {ReceiptDetailsComponent} from './screens/recipe/receipt-details/receipt-details.component';
+import {RecipeComponent} from './screens/recipe/recipe.component';
+import {ReceiptAddComponent} from './screens/recipe/recipe-add/receipt-add.component';
+import {RecipeEditComponent} from './screens/recipe/recipe-edit/recipe-edit.component';
+import {ReceiptDetailsComponent} from './screens/recipe/recipe-details/receipt-details.component';
 import {AuthGuardService as AuthGuard} from './auth/auth-guard.service';
 
 const routes: Routes = [
@@ -34,10 +34,10 @@ const routes: Routes = [
   {path: 'reviews', component: ReviewsComponent, canActivate: [AuthGuard]},
   {path: 'reviews/:id', component: ReviewsDetailsComponent, canActivate: [AuthGuard]},
   {path: 'reviews/edit/:id', component: ReviewsEditComponent, canActivate: [AuthGuard]},
-  // {path: 'recipe', component: RecipeComponent, canActivate: [AuthGuard]},
-  // {path: 'recipe/add', component: ReceiptAddComponent, canActivate: [AuthGuard]},
-  // {path: 'recipe/:id', component: ReceiptDetailsComponent, canActivate: [AuthGuard]},
-  // {path: 'recipe/edit/:id', component: RecipeEditComponent, canActivate: [AuthGuard]}
+  {path: 'recipe', component: RecipeComponent, canActivate: [AuthGuard]},
+  {path: 'recipe/add', component: ReceiptAddComponent, canActivate: [AuthGuard]},
+  {path: 'recipe/:id', component: ReceiptDetailsComponent, canActivate: [AuthGuard]},
+  {path: 'recipe/edit/:id', component: RecipeEditComponent, canActivate: [AuthGuard]}
 ];
 
 @NgModule({
