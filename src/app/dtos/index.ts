@@ -1,8 +1,7 @@
 export interface IUser {
-  _id: number;
+  id: number;
   email: string;
   displayName: string;
-  token: string;
 }
 
 export interface ILogin {
@@ -16,32 +15,17 @@ export interface IRegister {
   password: string;
 }
 
-export interface ILocation {
-  id: number;
-  locationName: string;
-  coordinates: string;
-  imgUrl: string;
-}
-
-export interface IEvent {
+export interface IRecipe {
   id: number;
   name: string;
-  date: Date;
-  location: ILocation;
-  imgUrl: string;
 }
 
-export interface IActivity {
+export interface IIngredient {
   id: number;
-  date: Date;
-  durationInSeconds: number;
-  distanceInMeters: number;
-  location: ILocation;
-  activityType: IActivityType;
+  name: string;
 }
 
-export interface IActivityType {
+export interface IReview {
   id: number;
-  activityTypeName: string;
-  icon: string;
+  name: string;
 }

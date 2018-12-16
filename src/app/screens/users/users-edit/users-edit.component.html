@@ -1,0 +1,13 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+  <mat-form-field>
+    <input matInput id="displayName" formControlName="displayName" placeholder="Name *">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput id="email" formControlName="email" placeholder="Email *">
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" type="submit" [disabled]="!form.valid">Save</button>
+
+</form>

@@ -51,5 +51,3 @@ export class LoginComponent implements OnInit {
     }
   }
 }
-
-// logout: gomb, az auth service logout metódusát meghívja, a logout current user = null. Ahol a gomb handlere van, oda controlerbe auth service, vissza a kezdő oldalra

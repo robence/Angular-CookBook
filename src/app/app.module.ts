@@ -9,23 +9,22 @@ import {LoginComponent} from './screens/login/login.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import {RegisterComponent} from './screens/register/register.component';
-import {LocationsAddComponent} from './screens/locations/locations-add/locations-add.component';
-import {LocationsComponent} from './screens/locations/locations.component';
-import {LocationsDetailsComponent} from './screens/locations/locations-details/locations-details.component';
-import {LocationsEditComponent} from './screens/locations/locations-edit/locations-edit.component';
-import {ActivityTypeComponent} from './screens/activity-type/activity-type.component';
-import {ActivityTypeDetailsComponent} from './screens/activity-type/activity-type-details/activity-type-details.component';
-import {ActivityTypeEditComponent} from './screens/activity-type/activity-type-edit/activity-type-edit.component';
-import {ActivityTypeAddComponent} from './screens/activity-type/activity-type-add/activity-type-add.component';
-import {EventsComponent} from './screens/events/events.component';
-import {EventsAddComponent} from './screens/events/events-add/events-add.component';
-import {EventsEditComponent} from './screens/events/events-edit/events-edit.component';
-import {EventsDetailsComponent} from './screens/events/events-details/events-details.component';
+import {UsersComponent} from './screens/users/users.component';
+import {UsersDetailsComponent} from './screens/users/users-details/users-details.component';
+import {UsersEditComponent} from './screens/users/users-edit/users-edit.component';
+// import {IngredientsComponent} from './screens/ingredients/ingredients.component';
+// import {IngredientsDetailsComponent} from './screens/ingredients/ingredients-details/ingredients-details.component';
+// import {IngredientsEditComponent} from './screens/ingredients/ingredients-edit/ingredients-edit.component';
+// import {IngredientsAddComponent} from './screens/ingredients/ingredients-add/ingredients-add.component';
+// import {ReviewsComponent} from './screens/reviews/reviews.component';
+// import {ReviewsAddComponent} from './screens/reviews/reviews-add/reviews-add.component';
+// import {ReviewsEditComponent} from './screens/reviews/reviews-edit/reviews-edit.component';
+// import {ReviewsDetailsComponent} from './screens/reviews/reviews-details/reviews-details.component';
 import {MaterialModule} from './material.module';
-import {ActivityComponent} from './screens/activity/activity.component';
-import {ActivityAddComponent} from './screens/activity/activity-add/activity-add.component';
-import {ActivityEditComponent} from './screens/activity/activity-edit/activity-edit.component';
-import {ActivityDetailsComponent} from './screens/activity/activity-details/activity-details.component';
+// import {RecipeComponent} from './screens/recipe/recipe.component';
+// import {ReceiptAddComponent} from './screens/recipe/receipt-add/receipt-add.component';
+// import {RecipeEditComponent} from './screens/recipe/receipt-edit/recipe-edit.component';
+// import {ReceiptDetailsComponent} from './screens/recipe/receipt-details/receipt-details.component';
 
 import {HttpClientModule} from '@angular/common/http';
 
@@ -36,22 +35,21 @@ import {HttpClientModule} from '@angular/common/http';
     NewsFeedComponent,
     LoginComponent,
     RegisterComponent,
-    LocationsAddComponent,
-    LocationsComponent,
-    LocationsDetailsComponent,
-    LocationsEditComponent,
-    ActivityTypeComponent,
-    ActivityTypeDetailsComponent,
-    ActivityTypeEditComponent,
-    ActivityTypeAddComponent,
-    EventsAddComponent,
-    EventsComponent,
-    EventsDetailsComponent,
-    EventsEditComponent,
-    ActivityComponent,
-    ActivityAddComponent,
-    ActivityEditComponent,
-    ActivityDetailsComponent
+    UsersComponent,
+    UsersDetailsComponent,
+    UsersEditComponent
+    // IngredientsComponent,
+    // IngredientsDetailsComponent,
+    // IngredientsEditComponent,
+    // IngredientsAddComponent,
+    // ReviewsAddComponent,
+    // ReviewsComponent,
+    // ReviewsDetailsComponent,
+    // ReviewsEditComponent,
+    // RecipeComponent,
+    // ReceiptAddComponent,
+    // RecipeEditComponent,
+    // ReceiptDetailsComponent
   ],
   imports: [
     BrowserModule,

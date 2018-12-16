@@ -6,14 +6,24 @@
       <span> News </span>
     </div>
 
-    <div *ngIf="isLoggedIn()" [ngClass]="isActive('/events')" routerLink="/events">
+    <div *ngIf="isLoggedIn()" [ngClass]="isActive('/recipe')" routerLink="/recipe">
       <mat-icon>art_track</mat-icon>
-      <span> Events </span>
+      <span> Recipes </span>
     </div>
 
-    <div *ngIf="!isLoggedIn()" [ngClass]="isActive('/login')" routerLink="/login">
-      <mat-icon>account_box</mat-icon>
-      <span> Login </span>
+    <div *ngIf="isLoggedIn()" [ngClass]="isActive('/ingredients')" routerLink="/ingredients">
+      <mat-icon>view_list</mat-icon>
+      <span> Ingredients </span>
+    </div>
+
+    <div *ngIf="isLoggedIn()" [ngClass]="isActive('/reviews')" routerLink="/reviews">
+      <mat-icon>art_track</mat-icon>
+      <span> Reviews </span>
+    </div>
+
+    <div *ngIf="isLoggedIn()" [ngClass]="isActive('/users')" routerLink="/users">
+      <mat-icon>location_on</mat-icon>
+      <span> Users </span>
     </div>
 
     <div *ngIf="!isLoggedIn()" [ngClass]="isActive('/register')" routerLink="/register">
@@ -21,19 +31,9 @@
       <span> Register </span>
     </div>
 
-    <div *ngIf="isLoggedIn()" [ngClass]="isActive('/locations')" routerLink="/locations">
-      <mat-icon>location_on</mat-icon>
-      <span> Locations </span>
-    </div>
-
-    <div *ngIf="isLoggedIn()" [ngClass]="isActive('/activity')" routerLink="/activity">
-      <mat-icon>art_track</mat-icon>
-      <span> Activity </span>
-    </div>
-
-    <div *ngIf="isLoggedIn()" [ngClass]="isActive('/activity-type')" routerLink="/activity-type">
-      <mat-icon>view_list</mat-icon>
-      <span> Activity Types </span>
+    <div *ngIf="!isLoggedIn()" [ngClass]="isActive('/login')" routerLink="/login">
+      <mat-icon>account_box</mat-icon>
+      <span> Login </span>
     </div>
 
   </mat-toolbar-row>
