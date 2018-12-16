@@ -9,13 +9,13 @@
 //     distanceInMeters: 100,
 //     location: <ILocation>{
 //       id: 0,
-//       locationName: 'location name',
+//       locationName: 'location rating',
 //       coordinates: 'string',
 //       imgUrl: 'string'
 //     },
 //     ingredient: <IActivityType>{
 //       id: 0,
-//       name: 'activity type name',
+//       rating: 'activity type rating',
 //       icon: 'icon as string'
 //     }
 //   },
@@ -26,13 +26,13 @@
 //     distanceInMeters: 200,
 //     location: <ILocation>{
 //       id: 1,
-//       locationName: 'location name 2',
+//       locationName: 'location rating 2',
 //       coordinates: 'string2',
 //       imgUrl: 'string2'
 //     },
 //     ingredient: <IActivityType>{
 //       id: 1,
-//       name: 'activity type name 2',
+//       rating: 'activity type rating 2',
 //       icon: 'icon as string2'
 //     }
 //   }

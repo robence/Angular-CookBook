@@ -16,10 +16,10 @@ import {IngredientsComponent} from './screens/ingredients/ingredients.component'
 import {IngredientsDetailsComponent} from './screens/ingredients/ingredients-details/ingredients-details.component';
 import {IngredientsEditComponent} from './screens/ingredients/ingredients-edit/ingredients-edit.component';
 import {IngredientsAddComponent} from './screens/ingredients/ingredients-add/ingredients-add.component';
-// import {ReviewsComponent} from './screens/reviews/reviews.component';
-// import {ReviewsAddComponent} from './screens/reviews/reviews-add/reviews-add.component';
-// import {ReviewsEditComponent} from './screens/reviews/reviews-edit/reviews-edit.component';
-// import {ReviewsDetailsComponent} from './screens/reviews/reviews-details/reviews-details.component';
+import {ReviewsComponent} from './screens/reviews/reviews.component';
+import {ReviewsAddComponent} from './screens/reviews/reviews-add/reviews-add.component';
+import {ReviewsEditComponent} from './screens/reviews/reviews-edit/reviews-edit.component';
+import {ReviewsDetailsComponent} from './screens/reviews/reviews-details/reviews-details.component';
 import {MaterialModule} from './material.module';
 // import {RecipeComponent} from './screens/recipe/recipe.component';
 // import {ReceiptAddComponent} from './screens/recipe/receipt-add/receipt-add.component';
@@ -42,10 +42,10 @@ import {HttpClientModule} from '@angular/common/http';
     IngredientsDetailsComponent,
     IngredientsEditComponent,
     IngredientsAddComponent,
-    // ReviewsAddComponent,
-    // ReviewsComponent,
-    // ReviewsDetailsComponent,
-    // ReviewsEditComponent,
+    ReviewsComponent,
+    ReviewsAddComponent,
+    ReviewsDetailsComponent,
+    ReviewsEditComponent,
     // RecipeComponent,
     // ReceiptAddComponent,
     // RecipeEditComponent,

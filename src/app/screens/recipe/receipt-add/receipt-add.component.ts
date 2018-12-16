@@ -1,7 +1,7 @@
 // import { Component, OnInit } from '@angular/core';
 // import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 // import {IActivity, IActivityType, ILocation} from '../../../dtos';
-// import activitiesData from '../recipe.data';
+// import activitiesData from '../recipe.review';
 //
 // @Component({
 //   selector: 'app-activity-add',
@@ -10,8 +10,8 @@
 // })
 // export class ReceiptAddComponent implements OnInit {
 //   public form: FormGroup;
-//   public data: IActivity;
-//   locations: ILocation[] = activitiesData.map(e => e.location);
+//   public review: IActivity;
+//   user: ILocation[] = activitiesData.map(e => e.location);
 //   ingredients: IActivityType[] = activitiesData.map(e => e.ingredient);
 //
 //   constructor(
@@ -35,7 +35,7 @@
 //
 //   public onSubmit(): void {
 //     if (this.form.valid) {
-//       this.data = {
+//       this.review = {
 //         id: 0,
 //         date: this.form.get('date').value,
 //         durationInSeconds: this.form.get('durationInSeconds').value,
@@ -43,7 +43,7 @@
 //         location: this.form.get('location').value,
 //         ingredient: this.form.get('ingredient').value
 //       };
-//       console.log(this.data);
+//       console.log(this.review);
 //     } else {
 //       alert('invalid form');
 //     }

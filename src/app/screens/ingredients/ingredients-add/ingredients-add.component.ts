@@ -19,7 +19,7 @@ export class IngredientsAddComponent implements OnInit {
 
   public createForm(): void {
     this.form = this.formBuilder.group({
-      name: ['', Validators.required]
+      rating: ['', Validators.required]
       }
     );
   }

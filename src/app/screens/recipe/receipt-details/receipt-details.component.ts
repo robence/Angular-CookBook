@@ -1,7 +1,7 @@
 // import {Component, OnDestroy, OnInit} from '@angular/core';
 // import {IActivity} from '../../../dtos';
 // import {ActivatedRoute} from '@angular/router';
-// import activitiesData from '../recipe.data';
+// import activitiesData from '../recipe.review';
 //
 // @Component({
 //   selector: 'app-activity-details',

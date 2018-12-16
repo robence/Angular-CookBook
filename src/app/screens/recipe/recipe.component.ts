@@ -1,6 +1,6 @@
 // import { Component, OnInit } from '@angular/core';
 // import {IActivity} from '../../dtos';
-// import activitiesData from './recipe.data';
+// import activitiesData from './recipe.review';
 //
 // @Component({
 //   selector: 'app-activity',

@@ -1,7 +1,7 @@
 // import {Component, OnDestroy, OnInit} from '@angular/core';
 // import {IActivity, IActivityType, ILocation} from '../../../dtos';
 // import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-// import activitiesData from '../recipe.data';
+// import activitiesData from '../recipe.review';
 // import {ActivatedRoute} from '@angular/router';
 //
 // @Component({
@@ -14,7 +14,7 @@
 //   private id: number;
 //   private sub: any;
 //   activity: IActivity;
-//   locations: ILocation[] = activitiesData.map(e => e.location);
+//   user: ILocation[] = activitiesData.map(e => e.location);
 //   ingredients: IActivityType[] = activitiesData.map(e => e.ingredient);
 //
 //   constructor(

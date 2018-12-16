@@ -18,7 +18,7 @@ export interface IRegister {
 export interface IRecipe {
   id: number;
   name: string;
-  ingredients: IIngredient[];
+  // ingredients: IIngredient[];
 }
 
 export interface IIngredient {
