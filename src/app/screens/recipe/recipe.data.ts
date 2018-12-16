@@ -13,9 +13,9 @@
 //       coordinates: 'string',
 //       imgUrl: 'string'
 //     },
-//     activityType: <IActivityType>{
+//     ingredient: <IActivityType>{
 //       id: 0,
-//       activityTypeName: 'activity type name',
+//       name: 'activity type name',
 //       icon: 'icon as string'
 //     }
 //   },
@@ -30,9 +30,9 @@
 //       coordinates: 'string2',
 //       imgUrl: 'string2'
 //     },
-//     activityType: <IActivityType>{
+//     ingredient: <IActivityType>{
 //       id: 1,
-//       activityTypeName: 'activity type name 2',
+//       name: 'activity type name 2',
 //       icon: 'icon as string2'
 //     }
 //   }

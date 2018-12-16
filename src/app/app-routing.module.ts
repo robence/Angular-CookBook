@@ -10,10 +10,9 @@ import {UsersEditComponent} from './screens/users/users-edit/users-edit.componen
 // import {ReviewsComponent} from './screens/reviews/reviews.component';
 // import {ReviewsDetailsComponent} from './screens/reviews/reviews-details/reviews-details.component';
 // import {ReviewsEditComponent} from './screens/reviews/reviews-edit/reviews-edit.component';
-// import {IngredientsComponent} from './screens/ingredients/activity-type.component';
-// import {IngredientsDetailsComponent} from './screens/ingredients/ingredients-details/ingredients-details.component';
-// import {IngredientsEditComponent} from './screens/ingredients/ingredients-edit/ingredients-edit.component';
-// import {IngredientsAddComponent} from './screens/ingredients/ingredients-add/ingredients-add.component';
+import {IngredientsComponent} from './screens/ingredients/ingredients.component';
+import {IngredientsEditComponent} from './screens/ingredients/ingredients-edit/ingredients-edit.component';
+import {IngredientsAddComponent} from './screens/ingredients/ingredients-add/ingredients-add.component';
 // import {RecipeComponent} from './screens/recipe/recipe.component';
 // import {ReceiptAddComponent} from './screens/recipe/receipt-add/receipt-add.component';
 // import {RecipeEditComponent} from './screens/recipe/receipt-edit/recipe-edit.component';
@@ -28,15 +27,14 @@ const routes: Routes = [
   {path: 'users', component: UsersComponent, canActivate: [AuthGuard]},
   {path: 'users/:id', component: UsersDetailsComponent, canActivate: [AuthGuard]},
   {path: 'users/edit/:id', component: UsersEditComponent, canActivate: [AuthGuard]},
-  // {path: 'recipe-type', component: IngredientsComponent, canActivate: [AuthGuard]},
-  // {path: 'recipe-type/add', component: IngredientsAddComponent, canActivate: [AuthGuard]},
-  // {path: 'recipe-type/:id', component: IngredientsDetailsComponent, canActivate: [AuthGuard]},
-  // {path: 'recipe-type/edit/:id', component: IngredientsEditComponent, canActivate: [AuthGuard]},
+  {path: 'ingredients', component: IngredientsComponent, canActivate: [AuthGuard]},
+  {path: 'ingredients/add', component: IngredientsAddComponent, canActivate: [AuthGuard]},
+  {path: 'ingredients/edit/:id', component: IngredientsEditComponent, canActivate: [AuthGuard]},
   // {path: 'reviews/add', component: ReviewsAddComponent, canActivate: [AuthGuard]},
-  // {path: 'events', component: ReviewsComponent, canActivate: [AuthGuard]},
+  // {path: 'reviews', component: ReviewsComponent, canActivate: [AuthGuard]},
   // {path: 'reviews/:id', component: ReviewsDetailsComponent, canActivate: [AuthGuard]},
   // {path: 'reviews/edit/:id', component: ReviewsEditComponent, canActivate: [AuthGuard]},
-  // {path: 'activity', component: RecipeComponent, canActivate: [AuthGuard]},
+  // {path: 'recipe', component: RecipeComponent, canActivate: [AuthGuard]},
   // {path: 'recipe/add', component: ReceiptAddComponent, canActivate: [AuthGuard]},
   // {path: 'recipe/:id', component: ReceiptDetailsComponent, canActivate: [AuthGuard]},
   // {path: 'recipe/edit/:id', component: RecipeEditComponent, canActivate: [AuthGuard]}

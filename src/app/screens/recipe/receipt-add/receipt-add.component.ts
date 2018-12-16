@@ -12,7 +12,7 @@
 //   public form: FormGroup;
 //   public data: IActivity;
 //   locations: ILocation[] = activitiesData.map(e => e.location);
-//   activityTypes: IActivityType[] = activitiesData.map(e => e.activityType);
+//   ingredients: IActivityType[] = activitiesData.map(e => e.ingredient);
 //
 //   constructor(
 //     private formBuilder: FormBuilder
@@ -28,7 +28,7 @@
 //       durationInSeconds: ['', Validators.required],
 //       distanceInMeters: ['', Validators.required],
 //       location: ['', Validators.required],
-//       activityType: ['', Validators.required]
+//       ingredient: ['', Validators.required]
 //       }
 //     );
 //   }
@@ -41,7 +41,7 @@
 //         durationInSeconds: this.form.get('durationInSeconds').value,
 //         distanceInMeters: this.form.get('distanceInMeters').value,
 //         location: this.form.get('location').value,
-//         activityType: this.form.get('activityType').value
+//         ingredient: this.form.get('ingredient').value
 //       };
 //       console.log(this.data);
 //     } else {

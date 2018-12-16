@@ -18,6 +18,7 @@ export interface IRegister {
 export interface IRecipe {
   id: number;
   name: string;
+  ingredients: IIngredient[];
 }
 
 export interface IIngredient {
@@ -27,5 +28,7 @@ export interface IIngredient {
 
 export interface IReview {
   id: number;
-  name: string;
+  rating: number;
+  user: IUser;
+  recipe: IRecipe;
 }

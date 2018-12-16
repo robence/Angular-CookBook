@@ -15,7 +15,7 @@
 //   private sub: any;
 //   activity: IActivity;
 //   locations: ILocation[] = activitiesData.map(e => e.location);
-//   activityTypes: IActivityType[] = activitiesData.map(e => e.activityType);
+//   ingredients: IActivityType[] = activitiesData.map(e => e.ingredient);
 //
 //   constructor(
 //     private route: ActivatedRoute,
@@ -37,7 +37,7 @@
 //         durationInSeconds: [this.activity.durationInSeconds, Validators.required],
 //         distanceInMeters: [this.activity.distanceInMeters, Validators.required],
 //         location: [this.activity.location, Validators.required],
-//         activityType: [this.activity.activityType, Validators.required]
+//         ingredient: [this.activity.ingredient, Validators.required]
 //       }
 //     );
 //   }
@@ -50,7 +50,7 @@
 //         durationInSeconds: this.form.get('durationInSeconds').value,
 //         distanceInMeters: this.form.get('distanceInMeters').value,
 //         location: this.form.get('location').value,
-//         activityType: this.form.get('activityType').value
+//         ingredient: this.form.get('ingredient').value
 //       };
 //       console.log(this.activity);
 //     } else {

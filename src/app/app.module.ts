@@ -12,10 +12,10 @@ import {RegisterComponent} from './screens/register/register.component';
 import {UsersComponent} from './screens/users/users.component';
 import {UsersDetailsComponent} from './screens/users/users-details/users-details.component';
 import {UsersEditComponent} from './screens/users/users-edit/users-edit.component';
-// import {IngredientsComponent} from './screens/ingredients/ingredients.component';
-// import {IngredientsDetailsComponent} from './screens/ingredients/ingredients-details/ingredients-details.component';
-// import {IngredientsEditComponent} from './screens/ingredients/ingredients-edit/ingredients-edit.component';
-// import {IngredientsAddComponent} from './screens/ingredients/ingredients-add/ingredients-add.component';
+import {IngredientsComponent} from './screens/ingredients/ingredients.component';
+import {IngredientsDetailsComponent} from './screens/ingredients/ingredients-details/ingredients-details.component';
+import {IngredientsEditComponent} from './screens/ingredients/ingredients-edit/ingredients-edit.component';
+import {IngredientsAddComponent} from './screens/ingredients/ingredients-add/ingredients-add.component';
 // import {ReviewsComponent} from './screens/reviews/reviews.component';
 // import {ReviewsAddComponent} from './screens/reviews/reviews-add/reviews-add.component';
 // import {ReviewsEditComponent} from './screens/reviews/reviews-edit/reviews-edit.component';
@@ -37,11 +37,11 @@ import {HttpClientModule} from '@angular/common/http';
     RegisterComponent,
     UsersComponent,
     UsersDetailsComponent,
-    UsersEditComponent
-    // IngredientsComponent,
-    // IngredientsDetailsComponent,
-    // IngredientsEditComponent,
-    // IngredientsAddComponent,
+    UsersEditComponent,
+    IngredientsComponent,
+    IngredientsDetailsComponent,
+    IngredientsEditComponent,
+    IngredientsAddComponent,
     // ReviewsAddComponent,
     // ReviewsComponent,
     // ReviewsDetailsComponent,
